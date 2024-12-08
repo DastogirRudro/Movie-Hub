@@ -18,7 +18,7 @@ const Home = () => {
         event.preventDefault()
     }
     const useloader = useLoaderData()
-    console.log(useloader)
+    // console.log(useloader)
     const [isDarkMode, setIsDarkMode] = useState(false); // State to manage theme
 
     // Toggle theme

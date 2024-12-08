@@ -49,7 +49,7 @@ import Swal from 'sweetalert2'
                 setSummery('at least 10 character here')
                 return
             }
-            console.log(title,email,poster,genre,duration,rating, release,summery)
+            // console.log(title,email,poster,genre,duration,rating, release,summery)
             const data = {
                 title: title,
                 email:email,
@@ -61,7 +61,7 @@ import Swal from 'sweetalert2'
                 summery:summery,
                 isCompleted: false
             }
-           fetch('http://localhost:8000/users',{
+           fetch('https://assignback.vercel.app/users',{
             method:"POST",
             headers: {
                 "Content-Type": "application/json"
@@ -70,7 +70,7 @@ import Swal from 'sweetalert2'
            })
            .then((res) => res.json())
            .then((result)=> {
-            console.log(result)
+            // console.log(result)
             Swal.fire({
                 title: "Good job!",
                 text: "Data submitted!",

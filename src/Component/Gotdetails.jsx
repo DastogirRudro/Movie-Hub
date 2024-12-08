@@ -4,7 +4,7 @@ const Gotdetails = ({loader,moviedata,setMoviedata}) => {
     const { _id,title, isCompleted, poster,email, genre, duration, rating, release, summery } = loader
     const handleDelete = (id)=> {
         //    console.log(id)
-           fetch(`http://localhost:8000/users/${id}`,{
+           fetch(`https://assignback.vercel.app/users/${id}`,{
             method:"DELETE"
            })
            .then((res)=> res.json())
@@ -16,12 +16,12 @@ const Gotdetails = ({loader,moviedata,setMoviedata}) => {
     }
     const handleUpdatedmovie = (id)=> {
         //    console.log(id)
-           fetch(`http://localhost:8000/users/${id}`,{
+           fetch(`https://assignback.vercel.app/users/${id}`,{
             method:"PATCH"
            })
            .then((res)=> res.json())
            .then((result)=> {
-             console.log(result)
+            //  console.log(result)
              const newData = moviedata.map((movie) => movie._id === id?{...movie,isCompleted:true}:movie)
              setMoviedata(newData)
            })

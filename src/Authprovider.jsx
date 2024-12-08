@@ -8,7 +8,7 @@ const Authprovider = ({children}) => {
     const [users,setUser] =useState(null)
     const[loading,setLoading]= useState(true)
     //for sign up
-    console.log(users)
+    // console.log(users)
     const createUser = (email,password) => {
         setLoading(true)
         return createUserWithEmailAndPassword(auth,email,password)

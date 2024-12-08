@@ -35,11 +35,11 @@ const Register = () => {
               setError("Password must be six Character One upper case and One lower case");
               return;
           }
-        console.log(name,email,photo,password)
+        // console.log(name,email,photo,password)
         createUser(email,password)
         .then((result) => {
            const user = result.user
-           console.log(user)
+        //    console.log(user)
            updateUserProfile({displayName:name,photoURL:photo}) 
            setUser(user)
            navigate("/")

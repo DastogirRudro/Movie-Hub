@@ -26,7 +26,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch('http://localhost:8000/use'),
+        loader: () => fetch('https://assignback.vercel.app/use'),
       },
       {
         path: "/login",
@@ -39,7 +39,7 @@ const router = createBrowserRouter([
       {
         path: "/allmovie",
         element: <Allmovie></Allmovie>,
-        loader:() => fetch('http://localhost:8000/users'),
+        loader:() => fetch('https://assignback.vercel.app/users'),
       },
       {
         path: "/addmovie",
@@ -48,7 +48,7 @@ const router = createBrowserRouter([
       {
         path: "/myfavorite",
         element:<Privateroute><Myfavorite></Myfavorite></Privateroute>,
-        loader: () => fetch('http://localhost:8000/user'),
+        loader: () => fetch('https://assignback.vercel.app/user'),
       },
       {
         path: "/bestone",
@@ -64,7 +64,7 @@ const router = createBrowserRouter([
           path: "/seedetails/:email",
           element: <Privateroute><Seedetails /></Privateroute>,
           loader: ({ params }) => 
-            fetch(`http://localhost:8000/users/${params.email}`)
+            fetch(`https://assignback.vercel.app/users/${params.email}`)
         },
       
     ],

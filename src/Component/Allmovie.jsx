@@ -4,10 +4,10 @@ import Gotallmovie from './Gotallmovie';
 
 const Allmovie = () => {
     const loaders = useLoaderData()
-    console.log(loaders)
+    // console.log(loaders)
     const [search,setSearch] =useState()
     useEffect(()=> {
-      fetch(`http://localhost:8000/us?searchParams=${search}`)
+      fetch(`https://assignback.vercel.app/us?searchParams=${search}`)
       .then((res) => res.json())
       .then((data)=> {
         console.log(data)

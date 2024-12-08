@@ -4,7 +4,7 @@ import Getfavorite from './Getfavorite';
 
 const Myfavorite = () => {
     const data = useLoaderData()
-    console.log(data)
+    // console.log(data)
     return (
         <div>
              <div className='md:grid justify-center mx-auto items-center grid-cols-3 gap-5 shadow-lg border-2 rounded-lg bg-gray-300 my-4 m-1 py-8 px-4'>
