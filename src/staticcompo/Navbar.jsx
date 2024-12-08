@@ -38,7 +38,7 @@ const Navbar = () => {
                             }
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">Movie Portal</a>
+                    <p className="font-bold text-purple-800 shadow-sm rounded-xl p-2 border-2 btn-ghost text-2xl">Movie Portal</p>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
