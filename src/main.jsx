@@ -52,7 +52,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/bestone",
-        element: <Privateroute><Bestone></Bestone></Privateroute>,
+        element: <Bestone></Bestone>,
       },
       // {
       //   path: "/seedetails",
